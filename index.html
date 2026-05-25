@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fireside AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="signalCanvas" aria-hidden="true"></canvas>
+
+    <main class="app-shell">
+      <aside class="site-panel" aria-label="Fireside AI overview">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">F</div>
+          <div>
+            <p class="eyebrow">Public AI assistant</p>
+            <h1>Fireside AI</h1>
+          </div>
+        </div>
+
+        <section class="intro">
+          <h2>Ask. Create. Learn.</h2>
+          <p>Fireside AI is a fast, friendly AI chat website built for everyday questions, writing help, brainstorming, planning, and learning.</p>
+        </section>
+
+        <section class="capabilities" aria-label="Fireside AI capabilities">
+          <div>
+            <span>01</span>
+            <p>Answer questions clearly</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p>Write, rewrite, and summarize</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p>Brainstorm ideas and plans</p>
+          </div>
+        </section>
+
+        <div class="status-strip">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Fireside AI demo is online</span>
+        </div>
+      </aside>
+
+      <section class="chat-panel" aria-label="Fireside AI chat">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">Fireside AI chat</p>
+            <h2>How can Fireside AI help?</h2>
+          </div>
+          <button id="resetChat" class="icon-button" type="button" title="Reset chat" aria-label="Reset chat">&#8634;</button>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <div class="prompt-grid" aria-label="Example prompts">
+          <button type="button" data-prompt="Explain artificial intelligence in simple words.">Explain AI</button>
+          <button type="button" data-prompt="Write a short professional email asking for help with a project.">Write email</button>
+          <button type="button" data-prompt="Give me five ideas for a new app.">App ideas</button>
+          <button type="button" data-prompt="Make a simple study plan for learning coding.">Study plan</button>
+        </div>
+
+        <form id="chatForm" class="composer">
+          <input id="messageInput" autocomplete="off" placeholder="Message Fireside AI..." />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
